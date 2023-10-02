@@ -106,8 +106,12 @@ li {
 
 /* common calss style start */
 
-.caps_first { text-transform: capitalize; }
+.caps_first { 
+  text-transform: capitalize; 
+  white-space: nowrap;
+}
 
+.color_white { color: #fff; }
 
 /* common class style end */
 
@@ -116,7 +120,14 @@ li {
 =================================*/
 
 .incremental_counter .wrapper { width: 100%; }
-.incremental_counter ul { display: flex; }
+
+.incremental_counter ul { 
+  display: flex; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .incremental_counter ul li { 
   display: flex; 
@@ -124,10 +135,15 @@ li {
   text-align: center;
 }
 
+.incremental_counter ul li:not(:last-child) { margin-right: 100px; }
+
 .socialmedia {
+  display: flex;
+  justify-content: center;
   text-indent: -9999px;
   float: left;
   transition: .2s;
+  font-size: 50px;
 }
 
 .socialmedia::before {
@@ -136,9 +152,10 @@ li {
   float: left;
 }
 
-.twitter {
-  content: "\f099";
-}
+.socialmedia[title="twitter"]::before { content: "\f099"; }
+.socialmedia[title="youtube"]::before { content: "\f167"; }
+.socialmedia[title="facebook"]::before { content: "\f09a"; }
+.counter {  font-size: 60px; }
 /*=================================
   main styling ends here
 =================================*/
