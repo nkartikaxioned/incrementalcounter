@@ -127,12 +127,17 @@ li {
 .socialmedia {
   text-indent: -9999px;
   float: left;
+  transition: .2s;
 }
 
 .socialmedia::before {
   font-family: "fontAwesome";
   text-indent: 0;
   float: left;
+}
+
+.twitter {
+  content: "\f099";
 }
 /*=================================
   main styling ends here
