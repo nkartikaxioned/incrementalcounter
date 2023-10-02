@@ -118,7 +118,10 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-
+.incremental_counter { 
+  background: #8E44AD;
+  height: 100vh;
+ }
 .incremental_counter .wrapper { width: 100%; }
 
 .incremental_counter ul { 
@@ -155,7 +158,12 @@ li {
 .socialmedia[title="twitter"]::before { content: "\f099"; }
 .socialmedia[title="youtube"]::before { content: "\f167"; }
 .socialmedia[title="facebook"]::before { content: "\f09a"; }
-.counter {  font-size: 60px; }
+
+.counter {  
+  font-size: 60px; 
+  letter-spacing: 2px; 
+}
+
 /*=================================
   main styling ends here
 =================================*/
