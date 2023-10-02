@@ -79,7 +79,7 @@ sub { bottom: -.25em; }
 }
 
 .cf:after { clear: both; }
-.cf { *zoom: 1; }
+/* .cf { *zoom: 1; } */
 
 /*for all*/
 body {
@@ -103,47 +103,40 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
+
+/* common calss style start */
+
+.caps_first { text-transform: capitalize; }
 
 
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
+/* common class style end */
 
 /*=================================
   main styling starts here
 =================================*/
 
+.incremental_counter .wrapper { width: 100%; }
+.incremental_counter ul { display: flex; }
 
+.incremental_counter ul li { 
+  display: flex; 
+  flex-direction: column; 
+  text-align: center;
+}
 
+.socialmedia {
+  text-indent: -9999px;
+  float: left;
+}
 
-
-
-
-
+.socialmedia::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+}
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
